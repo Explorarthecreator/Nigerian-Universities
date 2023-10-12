@@ -1,3 +1,42 @@
-body{
-    background-color: aqua;
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 100px;
+}
+.university-card{
+    width: 30%;
+    padding: 5px;
+}
+.university-card h3{
+    font-size: 16px;
+}
+.university-card p{
+    margin: 10px 0;
+}
+.university-card a{
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+@media screen and (min-width:600px){
+    .main{
+        width: 80%;
+        gap: 15px 25px;
+    }
+    .university-card{
+        width: 17%;
+        padding: 20px 10px;
+        box-shadow: 6px 5px 13px -1px #6E589B;
+        border-radius: 18px;
+    }
 }
