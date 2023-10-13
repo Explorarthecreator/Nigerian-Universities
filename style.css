@@ -1,42 +1,116 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    /* border: 1px solid; */
+}
+body{
+    background-color: #EBE4D1;
 }
 .main{
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 100px;
+    justify-content: center;
 }
 .university-card{
     width: 30%;
     padding: 5px;
+    border: 1px solid #D5AFFF;
+    position: relative;
+    overflow: hidden;
+    background-color:#FFFFFF;
+}
+.university-card .logo{
+    width: 29px;
+    height: 29px;
+    background: #F5ECFD;
+    border-radius: 50%;
+    /* text-align: center; */
+    font-weight: 700;
+    color: #26577C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .university-card h3{
     font-size: 16px;
+    line-height: 1.5;
 }
 .university-card p{
-    margin: 10px 0;
+    margin: 9px 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #26577C;
+    font-weight: 600;
 }
 .university-card a{
     text-decoration: none;
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     display: block;
-    border: 1px solid;
-    border-radius: 15px;
+    /* border: 1px solid; */
+    /* border-radius: 15px; */
+}
+.university-card span{
+    background-color: #D5AFFF;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    bottom: -15;
+    right: -15;
+    border-radius: 50%;
 }
 
-@media screen and (min-width:600px){
+@media screen and (min-width:800px){
     .main{
         width: 80%;
         gap: 15px 25px;
     }
     .university-card{
-        width: 17%;
+        width: 25%;
         padding: 20px 10px;
-        box-shadow: 6px 5px 13px -1px #6E589B;
+        box-shadow: 6px 5px 13px -1px #c0bfbf;
         border-radius: 18px;
+    }
+    .university-card a{
+        border: none;
+        padding: 0;
+        font-weight: 400;
+        color: #E55604;
+        /* text-decoration: underline; */
+    }
+    .university-card span{
+        width: 70px;
+        height: 70px;
+        bottom: -25;
+        right: -25;
+    }
+}
+@media screen and (min-width:1024px) {
+    .main{
+        width: 80%;
+        gap: 15px 25px;
+    }
+    .university-card{
+        width: 20%;
+        padding: 20px 10px;
+        box-shadow: 6px 5px 13px -1px #c0bfbf;
+        border-radius: 18px;
+    }
+    .university-card a{
+        border: none;
+        padding: 0;
+        font-weight: 400;
+        color: #E55604;
+        /* text-decoration: underline; */
+    }
+    .university-card span{
+        width: 70px;
+        height: 70px;
+        bottom: -25;
+        right: -25;
     }
 }
