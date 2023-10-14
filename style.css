@@ -72,7 +72,6 @@ body{
     .university-card{
         width: 25%;
         padding: 20px 10px;
-        box-shadow: 6px 5px 13px -1px #c0bfbf;
         border-radius: 18px;
     }
     .university-card a{
@@ -99,6 +98,10 @@ body{
         padding: 20px 10px;
         box-shadow: 6px 5px 13px -1px #c0bfbf;
         border-radius: 18px;
+        box-shadow: none;
+    }
+    .university-card:hover{
+        box-shadow: 6px 5px 13px -1px #c0bfbf;
     }
     .university-card a{
         border: none;
